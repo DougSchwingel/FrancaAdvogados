@@ -1,71 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    box-sizing: border-box; /* Ensure consistent box sizing */
-  }
-  
-  .atuacao-cards {
-    color: white;
-    margin: 0 10px 0 10px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(15%, 1fr));
-    column-gap: 1vw;
-    row-gap: 1vw;
-  }
-  
-  .card .box {
-    width: 100%;
-    height: 300px;
-    padding: 18px;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.041);
-    border: 1px solid rgba(255, 255, 255, 0.222);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border-radius: 12px;
-    transition: all ease 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-.card .box .title {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    padding: 5px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.cards-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1vw;
+  row-gap: 1vw;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: space-between;
+  align-items: center;
 }
 
-.img-card{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 65px;
+.card-area{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100%;
+  border-radius: 2px; 
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: relative;
+  padding: 15px;
 }
 
-.div-texto {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    height: 80px;
-    width: 90%;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-align: justify;
-    word-wrap: break-all;
-  }
-  
-.card .box:hover {
-    box-shadow: 0px 0px 20px 1px rgba(192, 192, 192, 0.151);
-    border: 1px solid rgba(255, 255, 255, 0.454);
+.card-top{
+  display: flex;
+  align-items: center;
 }
-  
+
+.card-titulo{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.card-imagem img{
+  width: 4vw;
+}
+
+.card-info{
+  margin-top: 15px;
+  font-size: 16px;
+  display: flex;
+  height: 100%;
+  text-align: justify;
+  line-height: 22px;
+}
